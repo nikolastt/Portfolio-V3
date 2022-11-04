@@ -14,6 +14,7 @@ module.exports = {
         "font-primary": "#CCD6F6",
         "font-secondary": "#8892B0",
         "menu-bg": "#112240",
+        blur: "#0C2034",
         "secondary-500": "#171C23",
         "secondary-300": "#21272F",
         text: "#F7F7F7",

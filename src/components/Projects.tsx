@@ -20,15 +20,17 @@ const Projects: React.FC = () => {
       }}
       viewport={{
         once: true,
-        amount: 0.4,
       }}
       className="px-6 mt-24"
     >
       <Title number="02" title="Some Things I've Built" />
 
-      <Project />
-
-      <h1>Projects</h1>
+      <div className="space-y-20 mt-12">
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+      </div>
     </motion.div>
   );
 };

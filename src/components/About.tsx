@@ -51,6 +51,7 @@ const About: React.FC = () => {
         <div className="rounded-md overflow-hidden w-52 h-52 mx-auto mt-12 ">
           {/* Div Border */}
           <div className="border-2 border-primary-500 w-52 h-52 absolute right-24 top-6 rounded-md " />
+
           <Image
             src={MyImage}
             className="w-60 h-60  object-cover scale-150 -translate-x-5"
