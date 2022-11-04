@@ -11,7 +11,7 @@ module.exports = {
         "primary-300": "#2AFA93",
         "primary-800": "#155750",
         "primary-900": "#0a192f",
-        "font-primary": "#CCDCF6",
+        "font-primary": "#CCD6F6",
         "font-secondary": "#8892B0",
         "menu-bg": "#112240",
         "secondary-500": "#171C23",

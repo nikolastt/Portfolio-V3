@@ -13,7 +13,7 @@ const Main: React.FC = () => {
   });
 
   return (
-    <div className="h-screen bg-primary-900 px-6 ">
+    <main className=" h-[calc(100vh-5rem)] px-6 flex flex-col justify-center">
       <motion.h2
         initial={{
           opacity: 0,
@@ -27,7 +27,7 @@ const Main: React.FC = () => {
           opacity: 1,
           y: 0,
         }}
-        className="font-robotoMono text-primary-500 pt-24"
+        className="font-robotoMono text-primary-500 "
       >
         Olá, meu nome é
       </motion.h2>
@@ -106,7 +106,7 @@ const Main: React.FC = () => {
           Projetos
         </motion.button>
       </div>
-    </div>
+    </main>
   );
 };
 
