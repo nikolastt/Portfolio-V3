@@ -18,9 +18,14 @@ const Project: React.FC = () => {
       }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ amount: 0.6, once: true }}
-      className="p-10 bg-primary-900 rounded-lg  z-10 relative h-96 overflow-hidden shadow-md hover:shadow-xl duration-300"
+      className="p-10 bg-primary-900 rounded-lg  z-10 relative  overflow-hidden shadow-md hover:shadow-xl duration-300"
     >
-      <Image src={Geaan} alt="Foto " className=" object-cover  z-10 " fill />
+      <Image
+        src={Geaan}
+        alt="Foto "
+        className=" object-cover  z-10 rounded-lg overflow-hidden scale-[97%]"
+        fill
+      />
       <div className="absolute bg-blur/[96%] w-full h-full top-0 left-0 z-20"></div>
 
       <div className="z-30 relative">
