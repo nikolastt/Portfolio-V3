@@ -5,8 +5,26 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import { GetStaticProps } from "next";
+import { collection, getDocs } from "firebase/firestore";
 
-export default function Home() {
+import { db } from "../services/firebase";
+
+export interface IProjects {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  gitLink: string;
+}
+
+interface IHome {
+  arrayProjects: string;
+}
+
+export default function Home({ arrayProjects }: IHome) {
+  const projects = JSON.parse(arrayProjects);
+
   return (
     <div className="bg-primary-900">
       <Head>
@@ -26,7 +44,7 @@ export default function Home() {
       </section>
 
       <section>
-        <Projects />
+        <Projects projects={projects} />
       </section>
 
       <section>
@@ -39,3 +57,18 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const projects: IProjects[] = [];
+
+  const response = await getDocs(collection(db, "projects"));
+  response.forEach((project) => {
+    projects.push(project.data() as IProjects);
+  });
+
+  const arrayProjects = JSON.stringify(projects);
+
+  return {
+    props: { arrayProjects },
+  };
+};

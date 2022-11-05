@@ -3,8 +3,13 @@ import Title from "./Title";
 
 import { motion } from "framer-motion";
 import Project from "./Project";
+import { IProjects } from "../pages";
 
-const Projects: React.FC = () => {
+interface IProjectsComponent {
+  projects: IProjects[];
+}
+
+const Projects: React.FC<IProjectsComponent> = ({ projects }) => {
   return (
     <motion.div
       initial={{
@@ -26,10 +31,16 @@ const Projects: React.FC = () => {
       <Title number="02" title="Some Things I've Built" />
 
       <div className="space-y-20 mt-12">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {projects.map((project) => (
+          <Project
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            link={project.link}
+            gitLink={project.gitLink}
+          />
+        ))}
       </div>
     </motion.div>
   );
