@@ -73,7 +73,7 @@ export default function Home({ arrayProjects }: IHome) {
           delay: 2.6,
           duration: 0.3,
         }}
-        className="right-auto left-[20px] w-[40px] fixed bottom-0   "
+        className="right-auto lg:left-[95px] w-[40px] fixed bottom-0 hidden md:block  "
       >
         <motion.div
           initial={{
@@ -117,7 +117,7 @@ export default function Home({ arrayProjects }: IHome) {
           delay: 2.8,
           duration: 0.3,
         }}
-        className="left-auto right-[20px] w-[40px] fixed bottom-0   "
+        className="left-auto right-[20px] lg:right-[95px] w-[40px] fixed bottom-0  hidden md:block  "
       >
         <div className="flex flex-col items-center relative boxCenter">
           <a className="flex items-center  mx-auto  w-[40px] leading-4 text-font-primary  writingVertical after:w-[1px] after:flex after:justify-center after:items-center after:h-24 after:bg-font-primary  after:mt-6">
