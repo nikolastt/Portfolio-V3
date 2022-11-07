@@ -23,11 +23,122 @@ const MenuNav: React.FC = () => {
 
   return (
     <>
-      <div className="bg-primary-900 h-20 flex items-center px-6">
-        <div className="bg-primary-500 w-10 h-10 rounded-full"></div>
+      <div className="bg-primary-900 h-20 flex items-center px-6 md:px-24 ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.2,
+            duration: 0.3,
+          }}
+          className="bg-primary-500 w-10 h-10 rounded-full"
+        ></motion.div>
+
+        <ul className="ml-auto  text-font-primary font-robotoMono space-x-6 items-center hidden md:flex">
+          <motion.li
+            initial={{
+              opacity: 0,
+
+              y: -30,
+            }}
+            transition={{
+              delay: 0.2,
+              duration: 0.3,
+
+              ease: "easeIn",
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
+          >
+            <span className="text-primary-500 ">01.</span>About
+          </motion.li>
+          <motion.li
+            initial={{
+              opacity: 0,
+              y: -30,
+            }}
+            transition={{
+              delay: 0.3,
+              duration: 0.3,
+
+              ease: "easeIn",
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
+          >
+            <span className="text-primary-500 ">02.</span>Experience
+          </motion.li>
+          <motion.li
+            initial={{
+              opacity: 0,
+              y: -30,
+            }}
+            transition={{
+              delay: 0.4,
+              duration: 0.3,
+
+              ease: "easeIn",
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
+          >
+            <span className="text-primary-500 ">03.</span>Work
+          </motion.li>
+          <motion.li
+            initial={{
+              opacity: 0,
+              y: -30,
+            }}
+            transition={{
+              delay: 0.5,
+              duration: 0.3,
+
+              ease: "easeIn",
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
+          >
+            <span className="text-primary-500 ">04.</span>Contact
+          </motion.li>
+
+          <motion.button
+            initial={{
+              opacity: 0,
+              y: -30,
+            }}
+            transition={{
+              delay: 0.5,
+              duration: 0.3,
+
+              ease: "easeIn",
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            className="border-2 border-primary-500 px-3 py-2 rounded-md text-primary-500 hover:scale-105 duration-300"
+          >
+            Resume
+          </motion.button>
+        </ul>
+
         <BiMenuAltRight
           size={40}
-          className="text-primary-500 ml-auto cursor-pointer "
+          className="text-primary-500 ml-auto cursor-pointer md:hidden "
           onClick={handleMenu}
         />
       </div>

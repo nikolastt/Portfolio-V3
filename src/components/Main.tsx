@@ -13,14 +13,14 @@ const Main: React.FC = () => {
   });
 
   return (
-    <main className=" h-[calc(100vh-5rem)] px-6 flex flex-col justify-center">
+    <main className=" h-[calc(100vh-5rem)] px-6 flex flex-col justify-center md:max-w-7xl mx-auto md:px-24 lg:max-w-7xl lg:mx-auto">
       <motion.h2
         initial={{
           opacity: 0,
           y: 20,
         }}
         transition={{
-          delay: 0.5,
+          delay: 1.3,
           duration: 0.3,
         }}
         animate={{
@@ -37,14 +37,14 @@ const Main: React.FC = () => {
           y: 20,
         }}
         transition={{
-          delay: 0.6,
+          delay: 1.5,
           duration: 0.3,
         }}
         animate={{
           opacity: 1,
           y: 0,
         }}
-        className="text-font-primary text-[40px] font-lateef font-bold leading-none mt-3"
+        className="text-font-primary text-[40px] font-lateef font-bold leading-none mt-3 md:text-8xl"
       >
         Nikolas Bitencourt.
       </motion.h1>
@@ -54,14 +54,14 @@ const Main: React.FC = () => {
           y: 20,
         }}
         transition={{
-          delay: 0.7,
+          delay: 1.7,
           duration: 0.3,
         }}
         animate={{
           opacity: 1,
           y: 0,
         }}
-        className="text-font-secondary text-[40px] font-lateef  leading-none"
+        className="text-font-secondary text-[40px] font-lateef  leading-none md:text-8xl"
       >
         Desenvolvedor front-end.
       </motion.h1>
@@ -72,14 +72,14 @@ const Main: React.FC = () => {
           y: 20,
         }}
         transition={{
-          delay: 0.8,
+          delay: 1.9,
           duration: 0.3,
         }}
         animate={{
           opacity: 1,
           y: 0,
         }}
-        className="text-font-secondary mt-6  font-inter"
+        className="text-font-secondary mt-6  font-inter md:text-xl md:w-2/3"
       >
         Sou um engenheiro de software especializado em construir aplicativos
         digitais. Atualmente estou focado em tecnologias atuais como{" "}
@@ -94,7 +94,7 @@ const Main: React.FC = () => {
             y: 20,
           }}
           transition={{
-            delay: 0.9,
+            delay: 2.0,
             duration: 0.3,
           }}
           animate={{

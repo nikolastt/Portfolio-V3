@@ -8,12 +8,12 @@ interface ITitle {
 const Title: React.FC<ITitle> = ({ title, number }) => {
   return (
     <h1
-      className="font-robotoMono text-font-primary whitespace-nowrap  flex items-end   after:block after:h-[2px] after:rounded-full after:bg-[#233554] after:w-full after:ml-3 after:m-3
+      className="font-robotoMono text-font-primary whitespace-nowrap  flex items-end   after:block after:h-[2px] after:rounded-full after:bg-[#233554] after:w-full after:ml-3 after:m-3 
 
 "
     >
-      <span className="text-primary-500  ">{number}.</span>{" "}
-      <span className="text-xl font-bold ">{title}</span>
+      <span className="text-primary-500  md:text-2xl">{number}.</span>{" "}
+      <span className="text-xl font-bold md:text-3xl">{title}</span>
     </h1>
   );
 };

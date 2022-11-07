@@ -26,13 +26,14 @@ const Projects: React.FC<IProjectsComponent> = ({ projects }) => {
       viewport={{
         once: true,
       }}
-      className="px-6 mt-24"
+      className="px-6 mt-24 md:px-24 lg:max-w-7xl lg:mx-auto"
     >
       <Title number="02" title="Some Things I've Built" />
 
-      <div className="space-y-20 mt-12">
-        {projects.map((project) => (
+      <div className="space-y-44 mt-12">
+        {projects.map((project, i) => (
           <Project
+            reverse={i % 2 === 0 ? false : true}
             key={project.title}
             title={project.title}
             description={project.description}
