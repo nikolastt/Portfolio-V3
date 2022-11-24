@@ -4,6 +4,9 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+
+import logo from "../../public/images/NBPng.png";
 
 const MenuNav: React.FC = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -33,8 +36,10 @@ const MenuNav: React.FC = () => {
             delay: 0.2,
             duration: 0.3,
           }}
-          className="bg-primary-500 w-10 h-10 rounded-full"
-        ></motion.div>
+          className=" w-16 h-8  relative"
+        >
+          <Image src={logo} alt="Logo" fill />
+        </motion.div>
 
         <ul className="ml-auto  text-font-primary font-robotoMono space-x-6 items-center hidden md:flex">
           <motion.li

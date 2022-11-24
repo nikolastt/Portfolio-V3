@@ -24,9 +24,10 @@ const Projects: React.FC<IProjectsComponent> = ({ projects }) => {
         opacity: 1,
       }}
       viewport={{
-        once: true,
+        once: false,
+        amount: 0.1,
       }}
-      className="px-6 mt-24 md:px-24 lg:max-w-7xl lg:mx-auto"
+      className="px-6 mt-24  md:px-24 lg:max-w-7xl lg:mx-auto lg:mt-48"
     >
       <Title number="02" title="Some Things I've Built" />
 

@@ -24,7 +24,7 @@ const About: React.FC = () => {
         once: true,
         amount: 0.4,
       }}
-      className=" px-6 pb-12 md:px-24 lg:max-w-7xl lg:mx-auto"
+      className=" px-6 pb-12 mt-24 lg:mt-48 h-[calc(100vh-5rem)] md:px-24 lg:max-w-7xl lg:mx-auto"
     >
       <Title title="About Me" number="01" />
 

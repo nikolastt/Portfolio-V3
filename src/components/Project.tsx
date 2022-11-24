@@ -78,18 +78,27 @@ const Project: React.FC<IProjectComponent> = ({
         }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ amount: 0.6, once: true }}
-        className={`p-10 md:p-0 bg-primary-900 rounded-lg h-auto z-10 relative   overflow-hidden shadow-md hover:shadow-xl md:hover:shadow-none duration-300 md:flex  md:items-center md:shadow-none md:overflow-visible  ${
+        className={`p-10 md:p-0 bg-primary-900 rounded-lg h-auto z-10 relative   overflow-hidden shadow-md hover:shadow-xl md:hover:shadow-none duration-300 md:flex  md:items-center md:shadow-none md:overflow-visible   ${
           reverse && "md:flex-row-reverse"
         }`}
       >
-        <div className="md:w-3/5 relative md:h-72 rounded-lg overflow-hidden lg:h-96 md:flex-shrink-0  md:z-10">
+        <div className="md:hidden">
           <Image
             src={image}
             alt="Foto"
             className=" object-cover z-10 rounded-lg overflow-hidden scale-[97%] grayscale"
             fill
           />
-          <div className="absolute bg-blur/[80%] w-full h-full top-0 left-0 z-20 hover:bg-transparent hover:grayscale"></div>
+          <div className="absolute bg-blur/[95%] w-full h-full top-0 left-0 z-20 "></div>
+        </div>
+        <div className="hidden md:flex md:w-3/5 relative md:h-72 rounded-lg overflow-hidden lg:h-96 md:flex-shrink-0  md:z-10">
+          <Image
+            src={image}
+            alt="Foto"
+            className=" object-cover z-10 rounded-lg overflow-hidden scale-[97%] grayscale"
+            fill
+          />
+          <div className="absolute bg-blur/[80%] w-full h-full top-0 left-0 z-20 "></div>
         </div>
 
         <div
