@@ -31,6 +31,7 @@ interface IHome {
 import SVG from "../../public/images/NB.svg";
 import Image from "next/image";
 import SvgNb from "../components/SvgNb";
+import ArrowScroll from "../components/ArrowScroll/ArrowScroll";
 
 export default function Home({ arrayProjects }: IHome) {
   const projects = JSON.parse(arrayProjects);
@@ -66,19 +67,35 @@ export default function Home({ arrayProjects }: IHome) {
 
           <MenuNav />
 
-          <section>
+          <section id="home">
             <Main />
+
+            <motion.div
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: 1,
+              }}
+              transition={{
+                delay: 2.6,
+                duration: 0.3,
+              }}
+              className="lg:hidden"
+            >
+              <ArrowScroll />
+            </motion.div>
           </section>
 
-          <section>
+          <section id="about">
             <About />
           </section>
 
-          <section>
+          <section id="projects">
             <Projects projects={projects} />
           </section>
 
-          <section>
+          <section id="contact">
             <Contact />
           </section>
 
@@ -145,10 +162,13 @@ export default function Home({ arrayProjects }: IHome) {
             }}
             className="left-auto right-[20px] lg:right-[95px] w-[40px] fixed bottom-0  hidden md:block  "
           >
-            <div className="flex flex-col items-center relative boxCenter">
-              <a className="flex items-center  mx-auto  w-[40px] leading-4 text-font-primary  writingVertical after:w-[1px] after:flex after:justify-center after:items-center after:h-24 after:bg-font-primary  after:mt-6">
+            <div className="flex flex-col items-center relative boxCenter cursor-pointer ">
+              <Link
+                href="#contact"
+                className="flex items-center  mx-auto  w-[40px] leading-4 text-font-primary hover:text-primary-500 duration-300  writingVertical after:w-[1px] after:flex after:justify-center after:items-center after:h-24 after:bg-font-primary  after:mt-6"
+              >
                 nikolasbitencourtt@gmail.com
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

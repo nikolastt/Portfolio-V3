@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
         once: true,
         amount: 0.4,
       }}
-      className="px-6 mt-48 h-screen flex flex-col justify-center md:px-24 lg:max-w-7xl lg:mx-auto"
+      className=" mt-48 h-screen flex flex-col justify-center container"
     >
       <Title number="03" title="Contact-me" />
 

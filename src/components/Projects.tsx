@@ -27,7 +27,7 @@ const Projects: React.FC<IProjectsComponent> = ({ projects }) => {
         once: false,
         amount: 0.1,
       }}
-      className="px-6 mt-24  md:px-24 lg:max-w-7xl lg:mx-auto lg:mt-48"
+      className=" mt-24  container lg:mt-48"
     >
       <Title number="02" title="Some Things I've Built" />
 

@@ -13,7 +13,7 @@ const Main: React.FC = () => {
   });
 
   return (
-    <main className=" h-[calc(100vh-5rem)] px-6 flex flex-col justify-center md:max-w-7xl mx-auto md:px-24 lg:max-w-7xl lg:mx-auto">
+    <main className=" h-[calc(100vh-5rem)]  flex flex-col justify-center md:max-w-7xl mx-auto container">
       <motion.h2
         initial={{
           opacity: 0,
@@ -46,7 +46,7 @@ const Main: React.FC = () => {
         }}
         className="text-font-primary text-[40px] font-lateef font-bold leading-none mt-3 md:text-8xl"
       >
-        Nikolas Bitencourt.
+        Nikolas Bitencourt
       </motion.h1>
       <motion.h1
         initial={{
@@ -63,7 +63,7 @@ const Main: React.FC = () => {
         }}
         className="text-font-secondary text-[40px] font-lateef  leading-none md:text-8xl"
       >
-        Desenvolvedor front-end.
+        Desenvolvedor front-end
       </motion.h1>
 
       <motion.p
@@ -81,10 +81,14 @@ const Main: React.FC = () => {
         }}
         className="text-font-secondary mt-6  font-inter md:text-xl md:w-2/3"
       >
-        Sou um engenheiro de software especializado em construir aplicativos
-        digitais. Atualmente estou focado em tecnologias atuais como{" "}
+        Construo aplicativos digitais, focado na resolução de problemas
+        utilizando principais tecnologias do mercado como{" "}
         <span className="text-primary-300">{text}</span>
         <Cursor cursorColor="#2AFA93" />
+        {/* Sou um engenheiro de software especializado em construir aplicativos
+        digitais. Atualmente estou focado em tecnologias atuais como{" "}
+        <span className="text-primary-300">{text}</span>
+        <Cursor cursorColor="#2AFA93" /> */}
       </motion.p>
 
       <div>

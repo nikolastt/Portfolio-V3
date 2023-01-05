@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import logo from "../../public/images/NBPng.png";
+import Link from "next/link";
 
 const MenuNav: React.FC = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const MenuNav: React.FC = () => {
 
   return (
     <>
-      <div className="bg-primary-900 h-20 flex items-center px-6 md:px-24 ">
+      <div className="bg-primary-900 h-20 flex items-center px-6 md:px-24 sticky top-0 z-50 drop-shadow-lg ">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -41,7 +42,7 @@ const MenuNav: React.FC = () => {
           <Image src={logo} alt="Logo" fill />
         </motion.div>
 
-        <ul className="ml-auto  text-font-primary font-robotoMono space-x-6 items-center hidden md:flex">
+        <motion.ul className="ml-auto  text-font-primary font-robotoMono space-x-6 items-center hidden md:flex">
           <motion.li
             initial={{
               opacity: 0,
@@ -58,9 +59,14 @@ const MenuNav: React.FC = () => {
               opacity: 1,
               y: 0,
             }}
+            viewport={{
+              once: true,
+            }}
             className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
           >
-            <span className="text-primary-500 ">01.</span>About
+            <Link href="#home">
+              <span className="text-primary-500 ">01.</span>Home
+            </Link>
           </motion.li>
           <motion.li
             initial={{
@@ -77,9 +83,14 @@ const MenuNav: React.FC = () => {
               opacity: 1,
               y: 0,
             }}
+            viewport={{
+              once: true,
+            }}
             className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
           >
-            <span className="text-primary-500 ">02.</span>Experience
+            <Link href="#about">
+              <span className="text-primary-500 ">02.</span>About
+            </Link>
           </motion.li>
           <motion.li
             initial={{
@@ -96,9 +107,14 @@ const MenuNav: React.FC = () => {
               opacity: 1,
               y: 0,
             }}
+            viewport={{
+              once: true,
+            }}
             className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
           >
-            <span className="text-primary-500 ">03.</span>Work
+            <Link href="#projects">
+              <span className="text-primary-500 ">03.</span>Projects
+            </Link>
           </motion.li>
           <motion.li
             initial={{
@@ -114,6 +130,9 @@ const MenuNav: React.FC = () => {
             whileInView={{
               opacity: 1,
               y: 0,
+            }}
+            viewport={{
+              once: true,
             }}
             className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
           >
@@ -135,11 +154,14 @@ const MenuNav: React.FC = () => {
               opacity: 1,
               y: 0,
             }}
+            viewport={{
+              once: true,
+            }}
             className="border-2 border-primary-500 px-3 py-2 rounded-md text-primary-500 hover:scale-105 duration-300"
           >
             Resume
           </motion.button>
-        </ul>
+        </motion.ul>
 
         <BiMenuAltRight
           size={40}
