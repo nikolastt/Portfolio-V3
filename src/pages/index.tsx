@@ -39,6 +39,20 @@ export default function Home({ arrayProjects }: IHome) {
   const [active, setActive] = useState(false);
   const [logoView, setlogoView] = useState(true);
 
+  const [changeColor, setChangeColor] = useState(false);
+
+  useEffect(() => {
+    function positionScroll() {
+      if (window.scrollY > 20) {
+        setChangeColor(true);
+      } else {
+        setChangeColor(false);
+      }
+    }
+
+    window.addEventListener("scroll", positionScroll);
+  }, []);
+
   useEffect(() => {
     setTimeout(() => {
       setActive(true);
@@ -65,7 +79,7 @@ export default function Home({ arrayProjects }: IHome) {
             <link rel="icon" href="/favicon.ico" />
           </Head>
 
-          <MenuNav />
+          <MenuNav changeColor={changeColor} />
 
           <section id="home">
             <Main />

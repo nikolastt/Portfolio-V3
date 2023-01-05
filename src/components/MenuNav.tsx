@@ -9,7 +9,11 @@ import Image from "next/image";
 import logo from "../../public/images/NBPng.png";
 import Link from "next/link";
 
-const MenuNav: React.FC = () => {
+interface IMenuNav {
+  changeColor: boolean;
+}
+
+const MenuNav: React.FC<IMenuNav> = ({ changeColor }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const handleMenu = () => {
@@ -27,7 +31,11 @@ const MenuNav: React.FC = () => {
 
   return (
     <>
-      <div className="bg-primary-900 h-20 flex items-center px-6 md:px-24 sticky top-0 z-50 drop-shadow-lg ">
+      <div
+        className={`bg-primary-900 h-20 flex items-center px-6 md:px-24 sticky top-0 z-50 ${
+          changeColor && "drop-shadow-lg "
+        } `}
+      >
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
