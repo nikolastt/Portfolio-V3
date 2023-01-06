@@ -203,5 +203,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: { arrayProjects },
+    revalidate: 60 * 60,
   };
 };
