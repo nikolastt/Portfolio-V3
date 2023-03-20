@@ -31,7 +31,7 @@ const Projects: React.FC<IProjectsComponent> = ({ projects }) => {
     >
       <Title number="02" title="Some Things I've Built" />
 
-      <div className="space-y-44 mt-12">
+      <div className="space-y-32 mt-12">
         {projects.map((project, i) => (
           <Project
             reverse={i % 2 === 0 ? false : true}

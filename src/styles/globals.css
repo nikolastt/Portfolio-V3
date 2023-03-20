@@ -26,6 +26,10 @@
         @apply px-6 md:px-36 lg:max-w-7xl mx-auto 
     }
 
+    .liSideBar{
+      @apply cursor-pointer space-x-3 space-y-1 hover:text-primary-500 transition-all duration-200 ease-out
+    }
+
     
 
     ::-webkit-scrollbar-thumb{

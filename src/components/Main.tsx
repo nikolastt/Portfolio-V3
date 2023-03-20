@@ -2,6 +2,7 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 // import { Container } from './styles';
 
@@ -91,7 +92,7 @@ const Main: React.FC = () => {
         <Cursor cursorColor="#2AFA93" /> */}
       </motion.p>
 
-      <div>
+      <Link href="#projects">
         <motion.button
           initial={{
             opacity: 0,
@@ -109,7 +110,7 @@ const Main: React.FC = () => {
         >
           Projetos
         </motion.button>
-      </div>
+      </Link>
     </main>
   );
 };
