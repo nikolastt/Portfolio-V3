@@ -14,10 +14,10 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/portfolio-9c731.appspot.com/o/Logo.png?alt=media&token=2fd11c6e-afba-4a37-8c13-e6abc3e47fa3"
+          content="https://firebasestorage.googleapis.com/v0/b/portfolio-9c731.appspot.com/o/logo%202%20(1).png?alt=media&token=c6e3b353-9ef3-40d0-b50a-68170101082e"
         />
-        <meta property="og:image:wigth" content="526" />
-        <meta property="og:image:height" content="275" />
+        <meta property="og:image:wigth" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="pt_BR" />
         <meta
           property="og:url"
@@ -33,6 +33,39 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta
           name="keywords"
           content="nikolas, bitencourt, portfolio, desenvolvedor, react js, js, javascript, next, next js, typescript, front end, programador, software, tailwind css, css, react, "
+        />
+        <meta
+          property="og:url"
+          content="https://nikolasbitencourt.vercel.app"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Nikolas Bitencourt" />
+        <meta
+          property="og:description"
+          content="Desenvolvedor React JS | Front-end | Java Script | Typescript | Next JS |"
+        />
+        <meta
+          property="og:image"
+          content="https://firebasestorage.googleapis.com/v0/b/portfolio-9c731.appspot.com/o/logo%202%20(1).png?alt=media&token=c6e3b353-9ef3-40d0-b50a-68170101082e"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:domain"
+          content="nikolasbitencourt.vercel.app"
+        />
+        <meta
+          property="twitter:url"
+          content="https://nikolasbitencourt.vercel.app"
+        />
+        <meta name="twitter:title" content="Nikolas Bitencourt" />
+        <meta
+          name="twitter:description"
+          content="Desenvolvedor React JS | Front-end | Java Script | Typescript | Next JS |"
+        />
+        <meta
+          name="twitter:image"
+          content="https://firebasestorage.googleapis.com/v0/b/portfolio-9c731.appspot.com/o/logo%202%20(1).png?alt=media&token=c6e3b353-9ef3-40d0-b50a-68170101082e"
         />
         <meta
           name="google-site-verification"
