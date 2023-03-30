@@ -225,6 +225,11 @@ const MenuNav: React.FC<IMenuNav> = ({ changeColor }) => {
               <span className="text-primary-500 mr-2">04.</span>Contact
             </li>
           </Link>
+          <Link href="/resume.pdf" target="_blank">
+            <button className="border-2 border-primary-500 px-3 py-2 rounded-md text-primary-500 hover:scale-105 duration-300">
+              Resume
+            </button>
+          </Link>
         </ul>
       </motion.div>
 
