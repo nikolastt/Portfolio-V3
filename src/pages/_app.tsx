@@ -16,6 +16,10 @@ export default function App({ Component, pageProps }: AppProps) {
           name="keywords"
           content="nikolas, bitencourt, portfolio, desenvolvedor, react js, js, javascript, next, next js, typescript, front end, programador, software, tailwind css, css, react, "
         />
+        <meta
+          name="google-site-verification"
+          content="C4ne6DifY4pvBeJI0jriXYaLdVoafoAncatYdvK0dB8"
+        />
         <link rel="icon" href="/images/NB.svg" />
       </Head>
 
