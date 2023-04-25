@@ -29,14 +29,14 @@ const About: React.FC = () => {
       <Title title="About Me" number="01" />
 
       <div className="md:flex md:items-center">
-        <p className="text-font-secondary font-inter mt-12 md:w-1/2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-          voluptatem natus obcaecati nisi maiores veritatis provident!
-          Laboriosam aperiam nesciunt hic. Ducimus alias placeat sunt nostrum,
-          quas reprehenderit ut et voluptatum. Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Vitae quidem vero asperiores quas
-          similique aut amet ducimus, voluptatem, incidunt nostrum eos, magni
-          reiciendis dolores culpa neque hic dolor corporis? Harum!
+        <p className="text-font-secondary font-inter mt-12 md:w-1/2 leading-relaxed">
+          Sou um Desenvolvedor de Software apaixonado por{" "}
+          <span className="text-primary-500">React.js</span> e{" "}
+          <span className="text-primary-500">Next.js</span> , especializado em
+          transformar ideias em Aplicações Web, de Alto desempenho e experiência
+          do usuário. Com habilidades técnicas e uma mentalidade orientada a
+          detalhes. Se você busca um profissional com paixão e dedicação, estou
+          pronto para ajudá-lo(a) a transformar suas ideias em realidade!
         </p>
 
         <motion.div
