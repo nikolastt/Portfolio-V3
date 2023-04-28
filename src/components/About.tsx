@@ -26,7 +26,7 @@ const About: React.FC = () => {
       }}
       className="  pb-12 pt-24  lg:mt-48 h-[calc(100vh-5rem)] container"
     >
-      <Title title="About Me" number="01" />
+      <Title title="Sobre" number="01" />
 
       <div className="md:flex md:items-center">
         <p className="text-font-secondary font-inter mt-12 md:w-1/2 leading-relaxed">

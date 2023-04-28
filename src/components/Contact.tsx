@@ -38,12 +38,12 @@ const Contact: React.FC = () => {
       }}
       className=" mt-48 h-screen flex flex-col justify-center container"
     >
-      <Title number="03" title="Contact-me" />
+      <Title number="03" title="Contate-me" />
 
       <div className="space-y-6 text-font-primary mt-12">
         <h4 className="text-4xl font-semibold text-center font-lateef">
           <span className="decoration-primary-500 underline text-font-primary">
-            Lets Talk
+            Let&apos;s Talk
           </span>
         </h4>
 

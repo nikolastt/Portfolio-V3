@@ -99,7 +99,7 @@ const MenuNav: React.FC<IMenuNav> = ({ changeColor }) => {
             className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
           >
             <Link href="#about">
-              <span className="text-primary-500 ">02.</span>About
+              <span className="text-primary-500 ">02.</span>Sobre
             </Link>
           </motion.li>
           <motion.li
@@ -123,7 +123,7 @@ const MenuNav: React.FC<IMenuNav> = ({ changeColor }) => {
             className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
           >
             <Link href="#projects">
-              <span className="text-primary-500 ">03.</span>Projects
+              <span className="text-primary-500 ">03.</span>Projetos
             </Link>
           </motion.li>
           <motion.li
@@ -147,7 +147,7 @@ const MenuNav: React.FC<IMenuNav> = ({ changeColor }) => {
             className="cursor-pointer hover:scale-105 ease-in duration-75 hover:text-primary-500"
           >
             <Link href="#contact">
-              <span className="text-primary-500 ">04.</span>Contact
+              <span className="text-primary-500 ">04.</span>Contato
             </Link>
           </motion.li>
 
@@ -212,17 +212,17 @@ const MenuNav: React.FC<IMenuNav> = ({ changeColor }) => {
           </Link>
           <Link href="#about">
             <li className="liSideBar " onClick={handleMenu}>
-              <span className="text-primary-500 mr-2">02.</span>About
+              <span className="text-primary-500 mr-2">02.</span>Sobre
             </li>
           </Link>
           <Link href="#projects">
             <li className="liSideBar " onClick={handleMenu}>
-              <span className="text-primary-500 mr-2">03.</span>Projects
+              <span className="text-primary-500 mr-2">03.</span>Projetos
             </li>
           </Link>
           <Link href="#contact">
             <li className="liSideBar " onClick={handleMenu}>
-              <span className="text-primary-500 mr-2">04.</span>Contact
+              <span className="text-primary-500 mr-2">04.</span>Contato
             </li>
           </Link>
           <Link href="/resume.pdf" target="_blank">

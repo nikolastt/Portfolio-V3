@@ -29,7 +29,7 @@ const Projects: React.FC<IProjectsComponent> = ({ projects }) => {
       }}
       className=" mt-24  container lg:mt-48"
     >
-      <Title number="02" title="Some Things I've Built" />
+      <Title number="02" title="Projetos" />
 
       <div className="space-y-32 mt-12">
         {projects.map((project, i) => (
